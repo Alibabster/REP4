@@ -24,9 +24,9 @@
         <form action="/login" method="post" id="login-form">
             <div class="modal-body">
                 <span class="pre-label">Username</span>
-                <input type="text" name="username" placeholder="Username" class="form-control">
+                <input type="text" name="username" placeholder="Username" class="form-control" style="width: 500px;">
                 <span class="pre-label">Password</span>
-                <input name="password" type="password" placeholder="Password" class="form-control">
+                <input name="password" type="password" placeholder="Password" class="form-control" style="width: 500px;">
             </div>
             <div class="modal-footer clearfix">
                 <a href="/register" data-toggle="modal" data-target="#register-modal" class="forgot-password pull-left">Register</a>

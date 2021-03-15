@@ -25,8 +25,8 @@
                 <div class="l_ln_topbar-left">
 
                     <ul class="ln_topbar_nav">
-                        <li class="ln_topbar_nav-item"><a class="ln_topbar_nav-lnk" href="/ru/blogs">Блоги</a></li>
-                        <li class="ln_topbar_nav-item"><a class="ln_topbar_nav-lnk" href="/ru/site/library">Моя библиотека</a></li>
+                        <li class="ln_topbar_nav-item"><a class="ln_topbar_nav-lnk" href="/add">Добавить историю</a></li>
+                        <li class="ln_topbar_nav-item"><a class="ln_topbar_nav-lnk" href="/library">Моя библиотека</a></li>
                     </ul>
                 </div>
 

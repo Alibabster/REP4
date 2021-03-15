@@ -46,5 +46,23 @@
             </div>
         </div>
     </div>
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Adding story to library</h4>
+        </div>
+        <form action="/add" method="post" id="login-form">
+            <div class="modal-body">
+                <span class="pre-label">Title</span>
+                <input type="text" name="title" placeholder="Title of thestory" class="form-control" style="width: 500px;">
+                <span class="pre-label">Brief description</span>
+                <input name="description" type="text" placeholder="Brief description" class="form-control" style="width: 500px;">
+                <span class="pre-label">Content</span>
+                <input name="content" type="text" placeholder="Content of the story" class="form-control">
+            </div>
+            <div class="modal-footer clearfix">
+                <button type="submit" class="btn btn-pink pull-right">Add Story</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

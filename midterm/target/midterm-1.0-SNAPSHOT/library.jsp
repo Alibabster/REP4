@@ -46,9 +46,34 @@
             </div>
         </div>
     </div>
-    <div class="row book-item" style="width: 1000px; margin-top: 70px; padding-top: 70px;">
+    <div class="row book-item" style="width: 1000px; margin-top: 35px; padding-top: 35px;">
         <div class="col-xs-7">
-            <h4 class="book-title"><a href=""><%out.println(request.getParameter("title"));%></a></h4>
+            <h4 class="book-title"><a href="">Хозяйка приюта магических существ</a></h4>
+            <p class="author-wr"><a class="author" href="">Лира Алая</a></p>
+            Я хотела жить беззаботной жизнью в другом мире. Но вот у меня на руках несчастный детеныш дракона, одинокий двухвостый котенок и брошенный стаей магический волчоно... <a href="" class="readmore">подробнее</a></p>
+            <p class="tags-wr"><span class="meta-name">В тексте есть: </span> <a href="">магические животные</a>, <a href="">бытовое фэнтези</a>, <a href="">попаданка с секретом</a></p>
+            <div class="pull-right">
+                    <span class="book-status book-status-process" data-toggle="tooltip" data-placement="bottom" title="656 586 знаков">
+                        <i class="material-icons">&#xe86a;</i>
+                        В процессе: 11 Мар
+                        <span>329 стр</span>
+                    </span></div>
+            <div class="pull-left">
+                <span class="count-views" data-toggle="tooltip" data-placement="bottom" title="Кол-во просмотров">2033575</span>
+                <span class="count-favourites" data-toggle="tooltip" data-placement="bottom" title="Кол-во добавлений в библиотеку">26915</span>
+                <span class="count-comments" data-toggle="tooltip" data-placement="bottom" title="Кол-во комментариев">10009</span>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-xs-3 meta-info">
+            <p><span class="meta-name">Общий рейтинг:</span> 11038 <span style="color: #f9b729;"><i class="glyphicon glyphicon-star"></i></span> </p>
+            <p><span class="meta-name">Текущий рейтинг:</span><br />
+                <strong>#2 в <a href=''>Попаданцы</a> </strong><br />#2 в <a href=''>Попаданцы в другие миры</a><br /><strong>#7 в <a target='blank' href=''>Фэнтези</a> </strong><br />#5 в <a href=''>Юмористическое фэнтези</a> </p>
+        </div>
+    </div>
+    <div class="row book-item" style="width: 1000px;">
+        <div class="col-xs-7">
+            <h4 class="book-title"><a href="">Егерь</a></h4>
             <p class="author-wr"><a class="author" href="">Ольга Обская</a></p>
             Может, кто-то не обрадовался бы, узнав, что ему в наследство досталась заброшенная артефакторная лавка с дурной славой, но я была в восторге. Потому что быстро сообр... <a href="" class="readmore">подробнее</a></p>
             <p class="tags-wr"><span class="meta-name">В тексте есть: </span> <a href="">юмор</a>, <a href="">любовь и страсть</a>, <a href="">бытовое фэнтези</a></p>

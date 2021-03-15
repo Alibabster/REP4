@@ -1,19 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ttola
-  Date: 15.03.2021
-  Time: 3:11
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -40,11 +24,11 @@
         <form action="/register" method="post" id="login-form">
             <div class="modal-body">
                 <span class="pre-label">Username</span>
-                <input type="text" name="username" placeholder="Username" class="form-control">
+                <input type="text" name="username" placeholder="Username" class="form-control" style="width: 500px;">
                 <span class="pre-label">Password</span>
-                <input name="password" type="password" placeholder="Password" class="form-control">
+                <input name="password" type="password" placeholder="Password" class="form-control" style="width: 500px;">
                 <span class="pre-label">Confirm Password</span>
-                <input name="confirm password" type="password" placeholder="Confirm Password" class="form-control">
+                <input name="confirm password" type="password" placeholder="Confirm Password" class="form-control" style="width: 500px;">
             </div>
             <div class="modal-footer clearfix">
                 <button type="submit" class="btn btn-pink pull-right">Register</button>

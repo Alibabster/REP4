@@ -24,9 +24,9 @@
         <form action="/login2" method="post" id="login-form">
             <div class="modal-body">
                 <span class="pre-label">Username</span>
-                <input type="text" name="username" placeholder="Username" class="form-control" value="<%out.println(request.getParameter("username"));%>">
+                <input type="text" name="username" placeholder="Username" class="form-control" value="<%out.println(request.getParameter("username"));%>" style="width: 500px;">
                 <span class="pre-label">Password</span>
-                <input name="password" type="password" placeholder="Password" class="form-control" value="<%out.println(request.getParameter("password"));%>">
+                <input name="password" type="password" placeholder="Password" class="form-control" value="<%out.println(request.getParameter("password"));%>" style="width: 500px;">
             </div>
             <div class="modal-footer clearfix">
                 <a href="/register" data-toggle="modal" data-target="#register-modal" class="forgot-password pull-left">Register</a>
