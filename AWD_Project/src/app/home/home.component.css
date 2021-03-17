@@ -1,0 +1,24 @@
+section{
+  width: 1150px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.title{
+  text-align: center;
+  font-weight: bold;
+}
+
+.subtitle{
+  text-align: center;
+}
+
+.description{
+  padding: 10px;
+  background: azure;
+}
+
+.img{
+  height: 300px;
+  width: 450px;
+}

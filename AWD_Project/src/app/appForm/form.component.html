@@ -1,0 +1,41 @@
+<section class="content">
+
+  <form>
+    <div class = "box">
+      <label for = "gov_ag">Institution / company in which the fact of corruption occurred</label><br>
+      <input type ="text" class="field" id="gov_ag" required maxlength="20" pattern="^[a-z A-Z]+$" [(ngModel)]= "govAg" name="govAg">
+    </div>
+    <div class = "box">
+      <label for = "participants">The person or persons involved in this act of corruption</label><br>
+      <input type ="text" class="field" id="participants" required maxlength="25" pattern="^[a-z A-Z]+$" [(ngModel)]="participants" name="participants">
+    </div>
+    <div class = "box">
+      <label for = "description">A description of this corruption action</label><br>
+      <input type ="text" class="field" id="description" [(ngModel)]="description" name="description">
+    </div>
+    <div class = "box">
+      <label for = "proving">Files proving this corruption action (video, audio, photo, etc.)</label><br>
+      <input type ="file" id="proving">
+    </div>
+  </form>
+
+  <app-form-report [govAg]="govAg" [description]="description" [participants]="participants" ></app-form-report>
+  <div class="check">
+    <!--    ngStyle-->
+    <p class="checkbox" [ngStyle]="{'font-size':'13px;', 'font-family':'Verdana'}" >
+      I am aware of my responsibility for perjury and lies
+    </p>
+
+    <!--    ngIf  -->
+    <label>
+      <input type="checkbox" name="checkbox" (click)="value = toggle()">
+    </label>
+    <div *ngIf="value == true">
+      <p>
+        You have confirmed your consent and familiarization with the responsibility for perjury.
+      </p>
+    </div>
+  </div>
+  <button (click)="successfulSubmit()">Submit</button>
+  <app-form-success *ngIf = "display"></app-form-success>
+</section>

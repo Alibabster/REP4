@@ -1,0 +1,35 @@
+<section>
+<div class="sign_up">
+  <h2>Sign Up Form</h2>
+  <form #signUpForm="ngForm" (ngSubmit)="onSubmit(signUpForm)">
+
+    <p>
+      <label for="firstname">First Name </label>
+      <input type="text" id="firstname" name="firstname" required maxlength="20" pattern="^[a-z A-Z]+$" [(ngModel)]="user.firstname">
+    </p>
+
+    <p>
+      <label for="lastname">Last Name </label>
+      <input type="text" id="lastname" name="lastname" required maxlength="20" pattern="^[a-z A-Z]+$" [(ngModel)]="user.lastname">
+    </p>
+
+    <p>
+      <label for="email">Email </label>
+      <input type="text" id="email" name="email" required email [(ngModel)]="user.email">
+    </p>
+
+    <p>
+      <label for="email">Password </label>
+      <input type="text" id="password" name="password" [(ngModel)]="user.password">
+    </p>
+
+    <p>
+      <button class="submit_Button" *ngIf="signUpForm.valid" type="submit" (click)="setSignUp()">Submit</button>
+    </p>
+    <p>{{signUpService.isSignUp()}}</p>
+    <b>valid</b> {{signUpForm.valid}}
+
+
+  </form>
+</div>
+</section>

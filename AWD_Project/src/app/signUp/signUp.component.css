@@ -1,0 +1,34 @@
+.sign_up{
+  margin: 50px auto 0;
+  border: darkcyan solid 1px;
+  border-radius: 5px;
+  width: 600px;
+}
+h2{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 40px;
+  background: darkcyan;
+  color: white;
+}
+
+form{
+  margin: 25px;
+}
+
+.submit_Button{
+  margin: 0 auto;
+  width: 100%;
+  height: 30px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background: darkcyan;
+}
+
+section{
+  width: 1150px;
+  max-width: 100%;
+  margin: 0 auto;
+}

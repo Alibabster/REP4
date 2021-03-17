@@ -1,0 +1,34 @@
+<section>
+
+  <label class="search">
+    <div class="input">
+      <input type="text" [(ngModel)]="postNum" >
+
+      <button class="searchButton" (click)="search()">Search</button>
+    </div>
+  <div class="post" *ngIf="response" >
+    <p>{{response.title}}</p>
+    <small>{{response.releaseDate}}</small>
+  </div>
+  </label>
+  <br>
+
+<div class="row ">
+  <div class="col-md-4 col-sm-4 col-xs-6 post" *ngFor="let post of postsList">
+    <h3 class="title">
+      {{post.title}}
+    </h3>
+    <img class="img" src="{{post.img}}">
+    <p class="text">
+      {{post.text}}
+    </p>
+  </div>
+</div>
+  <div>
+    <ul>
+      <li><a routerLink="/contacts">Contacts</a></li>
+      <li><a routerLink="/social_media">Social Media</a></li>
+    </ul>
+  </div>
+</section>
+<router-outlet></router-outlet>

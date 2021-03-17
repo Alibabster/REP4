@@ -1,0 +1,39 @@
+<div class ="success">
+  <h1>Successful submission of your application</h1>
+  <h2>The percentage of corruption incidents in a given organization {{percentage | percent}}</h2>
+  <p>You can also visit this sites</p>
+
+  <!--ngFor & ngClass-->
+  <ul>
+    <li *ngFor = "let item of items">
+      <p [ngClass]="{
+      'serviceCentre': item==='Service Centre',
+      'taxCommittee': item==='Tax Committee',
+      'nationalSecurityCommittee': item==='Security Committee',
+      'eGov': item==='EGov'
+      }">{{item}}</p>
+    </li>
+  </ul>
+
+
+  <p>Rate the app on a 3 point scale.</p>
+  <input type = "number" [(ngModel)]="mark" min="1" max="3">
+
+  <!--ngSwitch-->
+
+  <div [ngSwitch]="mark">
+    <ng-template ngSwitchCase="1">
+      Thanks for rating, we will try to improve the application.
+    </ng-template>
+    <ng-template ngSwitchCase="2">
+      Thank you for your assessment, you are a responsible citizen.
+    </ng-template>
+    <ng-template ngSwitchCase="3">
+      Thanks for the appreciation, goodbye.
+    </ng-template>
+    <ng-template ngSwitchDefault>
+      You did not enter a number or you entered an invalid number.
+    </ng-template>
+  </div>
+
+</div>

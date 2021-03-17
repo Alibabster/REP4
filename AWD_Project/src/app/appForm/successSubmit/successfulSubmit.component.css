@@ -1,0 +1,61 @@
+.success{
+  text-align: center;
+}
+
+.links{
+  color: white;
+  text-decoration: none;
+}
+
+.serviceCentre{
+  background: darkgrey;
+  width: 200px;
+  padding: 25px;
+  border-right: 1px solid black;
+}
+
+.serviceCentre:hover{
+  background: gray;
+}
+
+.taxCommittee{
+  background: darkgrey;
+  width: 200px;
+  padding: 25px;
+  border-right: 1px solid black;
+}
+
+.taxCommittee:hover{
+  background: gray;
+}
+
+.nationalSecurityCommittee{
+  background: darkgrey;
+  width: 200px;
+  padding: 25px;
+  border-right: 1px solid black;
+}
+
+.nationalSecurityCommittee:hover{
+  background: gray;
+}
+
+.eGov{
+  background: darkgrey;
+  width: 200px;
+  padding: 25px;
+}
+
+.eGov:hover{
+  background: gray;
+}
+
+li{
+  display: inline-block;
+}
+
+a{
+  text-decoration: none
+}
+
+
